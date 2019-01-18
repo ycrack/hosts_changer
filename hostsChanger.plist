@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>net.ycrack.wifi_switch</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/bin/bash</string>
+      <string>/Users/ycrack/develop/hosts_changer/change.sh</string><!-- Rewrite for your environment-->
+    </array>
+    <key>RunAtLoad</key><true/>
+    <key>StandardErrorPath</key>
+    <string>/dev/null</string><!-- <string>/tmp/error</string> -->
+    <key>StandardOutPath</key>
+    <string>/dev/null</string><!-- <string>/tmp/out</string> -->
+    <key>WatchPaths</key>
+    <array>
+      <string>/Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist</string>
+    </array>
+  </dict>
+</plist>
